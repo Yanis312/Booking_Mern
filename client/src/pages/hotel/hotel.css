@@ -1,0 +1,185 @@
+/* Style général du conteneur .hotelContainer */
+.hotelContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Style du conteneur .hotelWrapper */
+.hotelWrapper {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+
+/* Style du bouton de réservation .bookNow */
+.bookNow {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  border: none;
+  padding: 12px 24px; /* Ajustement de la taille du bouton */
+  background-color: #febb02; /* Couleur de fond */
+  color: #0b3c47; /* Couleur du texte */
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Style du titre de l'hôtel .hotelTitle */
+.hotelTitle {
+  font-size: 24px;
+  color: #0b3c47; /* Couleur du texte */
+}
+
+/* Style de l'adresse de l'hôtel .hotelAddress */
+.hotelAddress {
+  font-size: 14px; /* Ajustement de la taille de la police */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Style de la distance de l'hôtel .hotelDistance */
+.hotelDistance {
+  color: #febb02; /* Couleur du texte */
+  font-weight: bold;
+}
+
+/* Style du prix mis en avant de l'hôtel .hotelPriceHighlight */
+.hotelPriceHighlight {
+  color: #008009; /* Couleur du texte */
+  font-weight: bold;
+}
+
+/* Style des images de l'hôtel .hotelImages */
+.hotelImages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Style du conteneur d'image de l'hôtel .hotelImgWrapper */
+.hotelImgWrapper {
+  width: 33%;
+}
+
+/* Style de l'image de l'hôtel .hotelImg */
+.hotelImg {
+  width: 100%;
+  height: auto; /* Pour maintenir le rapport hauteur/largeur */
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* Style des détails de l'hôtel .hotelDetails */
+.hotelDetails {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Style des textes des détails de l'hôtel .hotelDetailsTexts */
+.hotelDetailsTexts {
+  flex: 3;
+}
+
+/* Style de la description de l'hôtel .hotelDesc */
+.hotelDesc {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+/* Style du prix des détails de l'hôtel .hotelDetailsPrice */
+.hotelDetailsPrice {
+  flex: 1;
+  background-color: #ebf3ff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Style des titres des détails de l'hôtel .hotelDetailsPrice > h1 */
+.hotelDetailsPrice > h1 {
+  font-size: 18px;
+  color: #555; /* Couleur du texte */
+}
+
+/* Style des sous-titres des détails de l'hôtel .hotelDetailsPrice > span */
+.hotelDetailsPrice > span {
+  font-size: 14px;
+}
+
+/* Style des textes des sous-titres des détails de l'hôtel .hotelDetailsPrice > h2 */
+.hotelDetailsPrice > h2 {
+  font-weight: 300;
+}
+
+/* Style du bouton des détails de l'hôtel .hotelDetailsPrice > button */
+.hotelDetailsPrice > button {
+  border: none;
+  padding: 12px 24px; /* Ajustement de la taille du bouton */
+  background-color: #febb02; /* Couleur de fond */
+  color: #0b3c47; /* Couleur du texte */
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Effet au survol du bouton */
+.hotelDetailsPrice > button:hover {
+  background-color: #ffc107; /* Changement de couleur au survol */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Ombre douce */
+}
+
+/* Style du conteneur .slider */
+.slider {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.613);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+}
+
+/* Style du conteneur de l'image du slider .sliderWrapper */
+.sliderWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style de l'image du slider .sliderImg */
+.sliderImg {
+  width: 80%;
+  height: 80vh;
+}
+
+/* Style du bouton de fermeture .close */
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  color: lightgray;
+  cursor: pointer;
+}
+
+/* Style de la flèche .arrow */
+.arrow {
+  margin: 20px;
+  font-size: 50px;
+  color: lightgray;
+  cursor: pointer;
+}

@@ -1,0 +1,111 @@
+.reserve {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7); /* Fond plus sombre pour plus de contraste */
+  z-index: 1000;
+}
+
+.rContainer {
+  width: 95%;
+  max-width: 800px; /* Plus grand et plus espacieux */
+  background-color: #fff;
+  padding: 40px; /* Plus d'espace à l'intérieur */
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden; /* Empêche les débordements */
+}
+
+.rClose {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 30px;
+  color: #ff4500; /* Icône de fermeture orange */
+}
+
+.rItem {
+  margin-bottom: 30px; /* Plus d'espace entre les éléments */
+}
+
+.rItemInfo, .rSelectRooms {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Permet aux éléments de passer à la ligne sur petits écrans */
+}
+
+.rTitle, .rDesc, .rMax, .rPrice {
+  margin-bottom: 10px; /* Plus d'espace entre les textes */
+  color: #333; /* Couleur de texte foncée pour contraste avec le fond blanc */
+}
+
+.rTitle {
+  font-weight: bold;
+  font-size: 22px; /* Titre plus grand */
+}
+
+.rDesc {
+  max-width: 600px; /* Limite la largeur pour une meilleure lisibilité */
+}
+
+.rMax b, .rPrice {
+  color: #ff4500; /* Détails en orange */
+  font-size: 18px; /* Plus grand */
+}
+
+.room {
+  display: flex;
+  align-items: center;
+  margin: 5px 0; /* Espacement vertical pour les options de chambre */
+  margin-bottom: 15px;
+}
+
+.room label {
+  margin-right: 10px; /* Espacement entre le label et le checkbox */
+  font-size: 18px; /* Rend le texte plus grand et plus facile à lire */
+  margin-left: 10px; /* Espacement après la case à cocher pour le label */
+}
+
+.rButton {
+  background-color: #ff4500; /* Bouton orange */
+  color: white;
+  padding: 15px 30px; /* Bouton plus grand */
+  border-radius: 10px; /* Bordures plus arrondies */
+  font-size: 20px; /* Texte du bouton plus grand */
+  transition: all 0.3s ease;
+  display: block;
+  width: 100%;
+  text-align: center; /* Centre le texte dans le bouton */
+}
+
+.rButton:hover {
+  background-color: #e03e00; /* Orange plus sombre au survol */
+  box-shadow: 0 4px 8px rgba(255, 69, 0, 0.4); /* Ombre pour un effet "soulevé" */
+}
+
+@media (max-width: 768px) {
+  .rContainer {
+    padding: 20px; /* Moins d'espace sur petits écrans */
+  }
+  
+  .rTitle, .rDesc, .rMax, .rPrice {
+    font-size: 16px; /* Ajustement de la taille du texte sur petits écrans */
+  }
+}
+
+
+
+/* Style pour les cases à cocher */
+.room input[type="checkbox"] {
+  transform: scale(1.5); /* Augmente la taille des cases à cocher */
+  margin-right: 10px; /* Espacement à droite pour séparer du texte */
+  cursor: pointer; /* Indique que l'élément est cliquable */
+}

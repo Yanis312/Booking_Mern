@@ -1,0 +1,73 @@
+/* Style général de la section .fp */
+.fp {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Style des éléments individuels .fpItem */
+.fpItem {
+  flex: 1;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative; /* Ajout d'une position relative pour les effets au survol */
+}
+
+/* Style des images .fpImg */
+.fpImg {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px; /* Ajout d'une bordure arrondie */
+  transition: transform 0.3s ease; /* Transition pour l'effet au survol */
+}
+
+/* Effet au survol pour les images */
+.fpItem:hover .fpImg {
+  transform: scale(1.05); /* Zoom légèrement au survol */
+}
+
+/* Style du nom .fpName */
+.fpName {
+  color: #27aecc; /* Couleur principale de votre site */
+  font-weight: bold;
+  font-size: 18px; /* Taille de police légèrement plus grande */
+}
+
+/* Style de la ville .fpCity */
+.fpCity {
+  font-weight: 300;
+  color: #555; /* Couleur légèrement plus sombre */
+}
+
+/* Style du prix .fpPrice */
+.fpPrice {
+  font-weight: 500;
+  color: #0b3c47; /* Couleur plus foncée pour le contraste */
+}
+
+/* Style des éléments de notation .fpRating */
+.fpRating > button {
+  background-color: #003580;
+  color: white;
+  border: none;
+  padding: 3px;
+  margin-right: 10px;
+  font-weight: bold;
+  cursor: pointer; /* Ajout du curseur pointer pour indiquer que c'est cliquable */
+  transition: background-color 0.3s ease; /* Transition pour l'effet au survol */
+}
+
+/* Effet au survol pour les boutons de notation */
+.fpRating > button:hover {
+  background-color: #0059b3; /* Changement de couleur au survol */
+}
+
+/* Style du texte dans .fpRating */
+.fpRating > span {
+  font-size: 14px;
+  color: #555; /* Couleur légèrement plus sombre */
+}

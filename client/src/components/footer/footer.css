@@ -1,0 +1,63 @@
+/* Styles généraux du footer */
+.footer {
+  width: 100%;
+  max-width: 1024px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  padding: 30px;
+  background-color: #21b853;
+  border-top: 2px solid #eee;
+  border-radius: 10px; /* Ajout d'une bordure arrondie */
+}
+
+/* Conteneur du contenu du footer */
+.footerContent {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Styles du logo du footer */
+.footerLogo {
+  width: 80px; /* Ajuster la taille selon les besoins */
+  height: auto;
+  margin-right: 20px; /* Espacement entre le logo et le texte */
+}
+
+/* Styles du texte du footer */
+.footerText {
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  text-align: center; /* Centrer le texte */
+}
+
+/* Styles des listes */
+.fLists {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fList {
+  list-style: none;
+  padding: 0;
+}
+
+.fListItem {
+  margin-bottom: 10px;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.fListItem:last-child {
+  margin-bottom: 0;
+}
+
+.fListItem:hover {
+  color: #0071c2;
+}

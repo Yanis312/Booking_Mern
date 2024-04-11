@@ -1,0 +1,54 @@
+.featured {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  z-index: 1;
+}
+
+.featuredItem {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 250px;
+  flex: 1;
+}
+
+.featuredItem:hover .featuredImg {
+  transform: scale(1.1); /* Augmentation de l'échelle de l'image au survol */
+}
+
+.featuredImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease; /* Transition pour un effet de survol fluide */
+}
+
+.featuredTitles {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: calc(100% - 40px); /* Ajustement de la largeur */
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5); /* Arrière-plan semi-transparent */
+  border-radius: 0 0 10px 10px; /* Coins arrondis uniquement en bas */
+  transition: background-color 0.3s ease; /* Transition pour un effet de survol fluide */
+}
+
+.featuredTitles h1, .featuredTitles h2 {
+  margin: 0;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px; /* Taille de police pour les titres */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre portée pour le texte */
+}
+
+.featuredTitles p {
+  margin: 0;
+  color: #fff;
+  font-size: 16px; /* Taille de police pour le texte en dessous */
+}
+

@@ -1,0 +1,101 @@
+/* Style du conteneur de liste .listContainer */
+.listContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Style du conteneur de liste .listWrapper */
+.listWrapper {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  gap: 20px;
+}
+
+/* Style de la zone de recherche .listSearch */
+.listSearch {
+  flex: 1;
+  background-color: #febb02; /* Couleur de fond */
+  padding: 12px; /* Ajustement du rembourrage */
+  border-radius: 10px; /* Bordure arrondie */
+  position: sticky;
+  top: 10px;
+  height: max-content;
+}
+
+/* Style du titre de la zone de recherche .lsTitle */
+.lsTitle {
+  font-size: 20px;
+  color: #0b3c47; /* Couleur du texte */
+  margin-bottom: 10px;
+}
+
+/* Style de l'élément de la liste .lsItem */
+.lsItem {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+/* Style de l'étiquette de l'élément de la liste .lsItem > label */
+.lsItem > label {
+  font-size: 14px; /* Ajustement de la taille de la police */
+  color: #0b3c47; /* Couleur du texte */
+}
+
+/* Style de l'entrée de l'élément de la liste .lsItem > input */
+.lsItem > input {
+  height: 40px; /* Ajustement de la hauteur */
+  border: none;
+  padding: 10px; /* Ajustement du rembourrage */
+  border-radius: 5px; /* Bordure arrondie */
+}
+
+/* Style de l'élément de la liste avec option .lsItem > span */
+.lsItem > span {
+  height: 40px; /* Ajustement de la hauteur */
+  padding: 10px; /* Ajustement du rembourrage */
+  background-color: white;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px; /* Bordure arrondie */
+}
+
+/* Style des options de la liste .lsOptions */
+.lsOptions {
+  padding: 10px;
+}
+
+/* Style de l'élément d'option de la liste .lsOptionItem */
+.lsOptionItem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: #0b3c47; /* Couleur du texte */
+  font-size: 14px; /* Ajustement de la taille de la police */
+}
+
+/* Style de l'entrée d'option de la liste .lsOptionInput */
+.lsOptionInput {
+  width: 50px;
+}
+
+/* Style du bouton de recherche .listSearch > button */
+.listSearch > button {
+  padding: 12px 20px; /* Ajustement du rembourrage */
+  background-color: white; /* Couleur de fond */
+  color: black; /* Couleur du texte */
+  border: none;
+  width: 100%;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px; /* Bordure arrondie */
+}
+
+/* Style du résultat de la liste .listResult */
+.listResult {
+  flex: 3;
+}

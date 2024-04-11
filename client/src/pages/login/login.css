@@ -1,0 +1,66 @@
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Utilisez tout l'espace vertical disponible */
+  background-color: #f0f2f5; /* Fond plus doux */
+}
+
+.lContainer {
+  padding: 40px;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Ombre pour donner de la profondeur */
+  border-radius: 8px; /* Bords arrondis pour adoucir le design */
+  width: 100%;
+  max-width: 400px; /* Largeur maximale pour les grands écrans */
+}
+
+.lContainer h1 {
+  margin-bottom: 24px; /* Espace avant les champs de saisie */
+  color: #333; /* Couleur de texte plus foncée pour le contraste */
+  text-align: center; /* Centrer le titre pour un meilleur équilibre visuel */
+}
+
+.lInput {
+  width: 100%; /* Utiliser toute la largeur disponible */
+  padding: 10px 15px; /* Padding généreux pour une saisie confortable */
+  margin-bottom: 20px; /* Espace entre les champs de saisie */
+  border-radius: 20px; /* Bords arrondis */
+  border: 1px solid #ccc; /* Bordure subtile */
+  font-size: 16px; /* Taille de police confortable */
+}
+
+.lButton {
+  width: 100%; /* Utiliser toute la largeur disponible */
+  padding: 10px 0; /* Padding vertical */
+  background-color: #007bff; /* Couleur de fond vive */
+  color: white; /* Texte blanc pour contraste */
+  border: none;
+  border-radius: 20px; /* Bords arrondis */
+  cursor: pointer;
+  font-size: 18px; /* Taille de police plus grande */
+  transition: background-color 0.3s; /* Transition pour effet au survol */
+}
+
+.lButton:hover {
+  background-color: #0056b3; /* Assombrir le bouton au survol */
+}
+
+.lButton:disabled {
+  background-color: #cccccc; /* Griser le bouton quand il est désactivé */
+  cursor: not-allowed;
+}
+
+.register {
+  margin-top: 20px;
+  text-align: center; /* Centrer le texte */
+}
+
+.register a {
+  color: #007bff; /* Harmoniser avec la couleur du bouton */
+  text-decoration: none; /* Enlever le soulignement */
+}
+
+.register a:hover {
+  text-decoration: underline; /* Souligner au survol pour indiquer la cliquabilité */
+}

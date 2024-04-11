@@ -1,0 +1,94 @@
+.navbar {
+  height: 80px;
+  background-color: #21b853;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navContainer {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+}
+
+.logoImage {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.navItems {
+  display: flex;
+  align-items: center;
+}
+
+.userContainer {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Espace entre le nom d'utilisateur et le bouton de déconnexion */
+}
+
+.username {
+  color: white;
+  font-weight: bold;
+  margin-right: 20px; /* Ajuster selon vos besoins */
+}
+
+.navButton {
+  background-color: #febb02;
+  color: #0b3c47;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.logoutButton {
+  background-color: #f64f59; /* Couleur spécifique pour le bouton de déconnexion */
+}
+
+.navButton:hover, .logoutButton:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Styles supplémentaires pour moderniser "My Booking" */
+.bookingText {
+  font-size: 24px; /* Taille de police adaptée */
+  color: #fff; /* Couleur blanche pour contraster avec le fond vert */
+  font-weight: bold; /* Rendre le texte en gras */
+  margin-left: 8px; /* Espacement après le logo */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25); /* Ombre subtile pour le texte */
+}
+
+/* Suggère d'ajuster également les styles généraux de la navbar si nécessaire */
+.navbar {
+  background-color: #21b853; /* Couleur de fond */
+  padding: 10px 20px; /* Ajout d'un padding pour plus d'espace */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre douce pour un effet de profondeur */
+}
+
+/* Ajustements pour les boutons et les éléments interactifs */
+.navButton, .logoutButton {
+  transition: all 0.3s ease; /* Transition douce pour les interactions */
+}
+
+.navButton:hover, .logoutButton:hover {
+  transform: translateY(-2px); /* Effet de léger soulèvement au survol */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre portée pour le bouton au survol */
+}

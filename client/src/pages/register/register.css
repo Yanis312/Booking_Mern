@@ -1,0 +1,47 @@
+.register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.register-container h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.register-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Espacement uniforme entre les champs */
+  width: 100%;
+  max-width: 400px; /* Largeur maximale pour garder le formulaire gérable */
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.register-container input {
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.register-container button {
+  padding: 10px 0;
+  background-color: #21b853; /* Couleur verte pour correspondre au style de la Navbar */
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.register-container button:hover {
+  background-color: #188a43; /* Couleur légèrement plus foncée au survol */
+}
