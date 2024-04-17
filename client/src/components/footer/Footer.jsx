@@ -44,7 +44,9 @@ const Footer = () => {
       <div className="footerContent">
         <img src={logo_lacite} alt="logo_lacite" className="footerLogo" />
         <div className="footerText">
-          &copy; 2024 College La Cite
+          &copy; 2024 College La Cite 
+          <p>developped and designed By Yanis, Wail et Magsen</p>
+          
         </div>
       </div>
     </div>
